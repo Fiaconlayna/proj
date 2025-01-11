@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         List<Food> foodList = new ArrayList<>();
 
-        // Создаем объекты еды (10 фруктов)
+        //создаем фрукты
         foodList.add(new Fruit("Apple", true, 0.3, 0.2, 14));
         foodList.add(new Fruit("Banana", true, 1.3, 0.3, 27));
         foodList.add(new Fruit("Orange", true, 0.9, 0.1, 12));
@@ -23,7 +23,7 @@ public class Main {
         foodList.add(new Meat("Chicken", true, 27, 3.6, 0));
         foodList.add(new Fruit("Poisonous Berry", false, 0.1, 0.1, 5));
 
-        // Фильтрация по съедобным фруктам с энергетической ценностью меньше заданного числа
+        //фильтруем съедобные фрукты с эн ценностью меньше заданного числа
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите максимальное количество калорий: ");
         double maxCalories = scanner.nextDouble();
@@ -35,7 +35,7 @@ public class Main {
             }
         }
 
-        // Фильтрация еды по последней букве названия
+        //фильтруем еду по последней букве названия
         System.out.println("Введите последнюю букву названия: ");
         char lastChar = scanner.next().charAt(0);
 
